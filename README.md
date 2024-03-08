@@ -1,6 +1,21 @@
 # Code for Experiment in Publication “Sensitivity Analysis in the Presence of Intrinsic Stochasticity for Discrete Fracture Network Simulations”
 
-All code used to perform the experiment in the cited publication.  For questions, issues, or clarifications please reach out to Murph: <murph@lanl.gov>.  
+All code used to perform the experiment in the cited publication.  For questions, issues, or clarifications please reach out to Murph: <murph@lanl.gov>.
+
+This repository is organized according to the different directories needed to perform the experiment in the paper.  These directories are:
+
+* dfnworks_drivers: code to perform the DFN simulations to create the data used in the experiment;
+
+* sequential_design_10th_percentile: code to perform the Sequential Design described in the paper;
+
+* test_data: code mostly identical to the code in dfnworks_drivers.  Used to created a separate testing data set for validation of the methods;
+
+* eda: scripts to create data visualizations on the data created in dfnworks_drivers, sequential_design_10th_percentile, and test_data;
+
+* gp_analysis: code to analyze the Gaussian Process (GP) fit during the Sequential Design in sequential_design_10th_percentile;
+
+* sobol_indices: code to estimate Sobol’ Indices using the GP fit during the Sequential Design in sequential_design_10th_percentile.
+
 
 ## Software Required
 To create underground particle transport simulation data, one will need access to the dfnWorks simulation suite, available for download [here](https://dfnworks.lanl.gov/).
